@@ -12,13 +12,6 @@ wikiRouter.post("/", async (req, res, next) => {
     const page = await Page.create({
       title: 'new post',
       content: 'yaddah yaddah new post',
-      hooks: {
-        beforeValidate: ( (title) => {
-          // Removes all non-alphanumeric characters from title
-          // And make whitespace underscore
-          return title.replace(/\s+/g, '_').replace(/\W/g, '');
-        })
-      }
     })
     res.redirect('/')
   } catch (error) { next(error)}
