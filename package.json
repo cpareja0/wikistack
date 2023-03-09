@@ -2,9 +2,9 @@
   "name": "wikistack",
   "version": "1.0.0",
   "description": "Wikipedia Clone",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon /Users/calvinpareja/Desktop/fullstack-academy/lecture/week2/day9-sequelize/wikistack/index.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
